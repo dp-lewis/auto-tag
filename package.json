@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf ./dist && mkdir ./dist",
     "test": "echo \"No tests here!\"",
-    "build": "npm run clean && touch ./dist/hello.js",
+    "build": "npm run clean && browserify ./js/app.js -o ./dist/bundle.js",
     "preversion": "echo \"preversioning\"",
     "version": "npm run build && git add -A dist -f",
     "postversion": "git push && git push --tags"
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/dp-lewis/auto-tag/issues"
   },
-  "homepage": "https://github.com/dp-lewis/auto-tag#readme"
+  "homepage": "https://github.com/dp-lewis/auto-tag#readme",
+  "devDependencies": {
+    "browserify": "^11.0.1"
+  }
 }
