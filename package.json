@@ -1,0 +1,22 @@
+{
+  "name": "auto-tag",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preversion": "echo \"Pre\"",
+    "version": "echo \"ver\"",
+    "postversion": "echo \"Post\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dp-lewis/auto-tag.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dp-lewis/auto-tag/issues"
+  },
+  "homepage": "https://github.com/dp-lewis/auto-tag#readme"
+}
