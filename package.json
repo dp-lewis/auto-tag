@@ -4,10 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preversion": "echo \"Pre\"",
-    "version": "echo \"ver\"",
-    "postversion": "echo \"Post\""
+    "preversion": "npm test",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags && rm -rf build/temp"
   },
   "repository": {
     "type": "git",
