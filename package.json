@@ -6,8 +6,8 @@
   "scripts": {
     "clean": "rm -rf ./dist && mkdir ./dist",
     "test": "echo \"No tests here!\"",
-    "build": "npm run clean && browserify ./js/app.js -o ./dist/bundle.js",
-    "preversion": "echo \"preversioning\"",
+    "build": "browserify ./js/app.js -o ./dist/bundle.js",
+    "preversion": "npm run clean",
     "version": "npm run build && git add -A dist -f",
     "postversion": "git push && git push --tags"
   },
