@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf ./dist && mkdir ./dist",
     "test": "echo \"No tests here!\"",
-    "build": "npm clean && npm run clean && touch ./dist/hello.js",
+    "build": "npm run clean && npm run clean && touch ./dist/hello.js",
     "preversion": "echo \"preversioning\"",
     "version": "npm run build && git add -A dist -f",
     "postversion": "git push && git push --tags"
