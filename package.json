@@ -1,14 +1,14 @@
 {
   "name": "auto-tag",
-  "version": "1.31.1",
+  "version": "1.31.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf ./dist && mkdir ./dist",
     "test": "echo \"No tests here!\"",
-    "build": "npm run clean && touch ./dist/hello.js",
+    "build": "npm run clean && touch ./dist/hello.js &&",
     "preversion": "echo \"preversioning\"",
-    "version": "touch ./dist/hello.js && git add -A dist -f",
+    "version": "npm run build && git add -A dist -f &&",
     "postversion": "git push && git push --tags"
   },
   "repository": {
